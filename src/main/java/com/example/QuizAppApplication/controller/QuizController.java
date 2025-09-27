@@ -27,7 +27,7 @@ public class QuizController {
     private static final List<Quiz> historyStore = new ArrayList<>();
 
     private String extractValidJson(String response) {
-        // Try direct parse first
+        // Try direct parse first here
         ObjectMapper mapper = new ObjectMapper();
         try {
             mapper.readTree(response);
