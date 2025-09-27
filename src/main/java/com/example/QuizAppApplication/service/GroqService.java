@@ -9,10 +9,10 @@ import java.util.*;
 
 @Service
 public class GroqService {
-    @Value("${groq.api.key}")
+    @Value("${groq_api_key}")
     private String groqApiKey;
 
-    @Value("${groq.api.url}")
+    @Value("${groq_api_url}")
     private String groqApiUrl;
 
     public String generateQuizPrompt(String subject, int grade, int totalQuestions, int maxScore, String difficulty) {
